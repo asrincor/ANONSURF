@@ -11,20 +11,20 @@ print("""
 Bu araçla otomatik olarak IP Adres değiştirebilirsiniz, değeri saniye olarak girin.
 """)
 
-sure = input("IP Değişim Süre(saniye) : ")
+sure = int(input("IP Değişim Süre(saniye) : "))
 
 os.system("anonsurf start")
 os.system("clear")
-print("Yeni IP Adres :")
-print("-----------------------------")
+print("Yeni IP Adresiniz :")
+print("|___________________________|")
 os.system("curl icanhazip.com")
-print("-----------------------------")
+print("|___________________________|")
 
 while True:
 	time.sleep(sure)
 	os.system("anonsurf restart")
 	os.system("clear")
 	print("Yeni IP Adres :")
-	print("-----------------------------")
+	print("|___________________________|")
 	os.system("curl icanhazip.com")
-	print("-----------------------------")
+	print("|___________________________|")
